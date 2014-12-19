@@ -1,0 +1,10 @@
+config BOARD_HEADER_FILE
+	string "HTC board specific header file name"
+	default ""
+
+config MACH_VALENTE_WX
+	depends on ARCH_MSM8960
+	select MACH_HTC
+	bool "HTC Valente WX"
+	help
+	  Support for the HTC VALENTE_WX device.
