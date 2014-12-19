@@ -1,0 +1,10 @@
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-regulator.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-gpiomux.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-storage.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-audio.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-pmic.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-keypad.o
+obj-$(CONFIG_MACH_VALENTE_WX) += board-valente_wx-camera.o
+obj-$(CONFIG_MACH_VALENTE_WX) += display/
+CFLAGS_board-valente_wx-display.o += -Idrivers/video
